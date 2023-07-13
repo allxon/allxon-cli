@@ -8,24 +8,6 @@ Scan com port.
 allxon-cli oob scan
 ```
 
-## `heartbeat`
-Heartbeat function.
-
-**Options**
-
-- `-p,--port`: Target com port (required)
-
-### `ping`
-Send heartbeat signal.
-
-### `disable`
-Disable heartbeat.
-
-**Example**
-```bash
-allxon-cli heartbeat --port ttyUSB0 ping
-```
-
 ## `link`
 Link to oob.
 
