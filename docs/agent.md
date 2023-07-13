@@ -17,6 +17,10 @@ Install or update Allxon Agent.
 
 `--bsp`: For BSP installation mode. (not enroll and launch agent)
 
+`--release TEXT`: Install the specified version of Allxon Agent. 
+
+`--release-file FILE`: Install the specified version of Allxon Agent from release file.
+
 **Example**
 ```bash
 # default install
