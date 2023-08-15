@@ -16,6 +16,5 @@ Or you can install from [release page](https://github.com/allxon/allxon-cli/rele
 ## Reference
 - [`allxon-cli agent`](agent.md)
 - [`allxon-cli oob`](oob.md)
-- [`allxon-cli upgrade`](upgrade.md)
 - [`allxon-cli log`](log.md)
 - [`allxon-cli version`](version.md)
