@@ -68,6 +68,12 @@ allxon-cli agent proxy --url "https://your-proxy-server.com"
 ## `diagnose`
 Check the network environment of your edge device.
 
+**Options**
+
+`--proxy TEXT`: Configure the URL for the https proxy server. (Linux only)
+
+`--external-ca TEXT:FILE`: Configure the CA file of the transparent proxy server. (Linux only)
+
 **Example**
 ```bash
 allxon-cli agent diagnose

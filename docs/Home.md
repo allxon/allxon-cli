@@ -35,7 +35,7 @@ sudo bash -c "$(wget -qO - https://get.allxon.net/linux)"
 ## Options 
 - `--release TEXT`: Install specific version of Allxon Agent, default is latest version.
 - `--release-file TEXT`: Install Allxon Agent from local file.
-- `--group-code TEXT`: Set group code for Allxon Agent enrollment.
+- `--group-token TEXT`: Set group token for Allxon Agent enrollment.
 - `--proxy TEXT`: Set proxy url for Allxon Agent installation and environment. 
 - `--external-ca TEXT`: Set external CA certificate path (transparent proxy) for Allxon Agent installation and environment.
 - `--no-ui`: Disable Allxon Agent UI installation.
@@ -54,6 +54,6 @@ Following command to execute wizard through command line mode:
 ```cmd
 allxon-installer.exe --confirm-command install [options]=[arguments]
 
-@REM Install with group code
-allxon-installer.exe --confirm-command install group-code=AQOPKN4B
+@REM Install with group token
+allxon-installer.exe --confirm-command install group-token=dTvCX2QuT9C-cQnFYhoqda6588088583
 ```
