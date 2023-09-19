@@ -48,7 +48,7 @@ sudo bash -c "$(wget -qO - https://get.allxon.net/linux)"
 # Windows wizard installer
 Windows wizard installer provide a gui wizard style to install Allxon Agent on Windows system. The wizard will install specfic version of Allxon Agent and `allxon-cli` depend on wizard version.
 
-Download wizard installer from [release page](https://github.com/allxon/allxon-cli/releases).
+[**Download wizard installer**](https://get.allxon.net/windows/allxon-installer.exe)
 
 Following command to execute wizard through command line mode:
 ```cmd
