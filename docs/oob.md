@@ -1,19 +1,13 @@
 Execute oob related Utilities.
 
 ## `scan`
+
 Scan com port.
 
+*Require administrator or root permission*
+
 **Example**
+
 ```bash
 allxon-cli oob scan
-```
-
-## `link`
-Link to oob.
-
-- `-m,--manual TEXT`: Link oob manually.
-
-**Example**
-```bash
-allxon-cli oob link
 ```
