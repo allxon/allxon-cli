@@ -20,6 +20,7 @@ Or you can install from [release page](https://github.com/allxon/allxon-cli/rele
 ## Reference
 
 - [`allxon-cli agent`](agent.md)
+- [`allxon-cli plugin`](plugin.md)
 - [`allxon-cli ota`](ota.md)
 - [`allxon-cli log`](log.md)
 - [`allxon-cli version`](version.md)
@@ -42,6 +43,8 @@ sudo bash -c "$(wget -qO - https://get.allxon.net/linux)"
 - `--release TEXT`: Install specific version of Allxon Agent, default is latest version.
 - `--release-file TEXT`: Install Allxon Agent from local file.
 - `--token TEXT`: Pair the device through 'add device booster' token.
+- `--name TEXT`: Set device name.
+- `--region TEXT`: Set the server region for Allxon Agent [US, JP].
 - `--proxy TEXT`: Set proxy url for Allxon Agent installation and environment.
 - `--external-ca TEXT`: Set external CA certificate path (transparent proxy) for Allxon Agent installation and environment.
 - `--no-ui`: Disable Allxon Agent UI installation.
