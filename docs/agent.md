@@ -1,4 +1,4 @@
-Execute or update Allxon Agent Utilities.
+Execute Allxon Agent utilities.
 
 ## `uninstall`
 

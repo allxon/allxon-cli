@@ -1,8 +1,8 @@
-Execute oob related Utilities.
+Execute OOB Enabler related utilities.
 
 ## `scan`
 
-Scan com port.
+Scan COM ports.
 
 *Require administrator or root permission*
 

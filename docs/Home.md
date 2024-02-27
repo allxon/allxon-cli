@@ -44,6 +44,7 @@ sudo bash -c "$(wget -qO - https://get.allxon.net/linux)"
 - `--release-file TEXT`: Install Allxon Agent from local file.
 - `--token TEXT`: Pair the device through 'add device booster' token.
 - `--name TEXT`: Set device name.
+- `--profile TEXT`: Set the profile .json file.
 - `--region TEXT`: Set the server region for Allxon Agent [US, JP].
 - `--proxy TEXT`: Set proxy url for Allxon Agent installation and environment.
 - `--external-ca TEXT`: Set external CA certificate path (transparent proxy) for Allxon Agent installation and environment.
@@ -53,6 +54,29 @@ sudo bash -c "$(wget -qO - https://get.allxon.net/linux)"
 - `--uninstall`: Uninstall Allxon Agent.
 - `--help`: Show help message and exit.
 - `--version`: Show version and exit.
+
+### Details
+
+Profile file is a json file that contains the fields under Profile section in the Allxon Protal. The file can be used to set the profile during installation. The file should be in the following format:
+
+```json
+{
+    "store": "My Store",
+    "phone": "12345678",
+    "asset": "ASSET123",
+    "address": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "country": "USA",
+    "zip": "12345",
+    "note": "This is a note",
+    "tags": [
+        "tag1"
+    ]
+}
+```
+
+> Note: country should be in [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) format.
 
 # Windows wizard installer
 

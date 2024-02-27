@@ -1,9 +1,9 @@
-Export Allxon system logs
+Export Allxon system log.
 
 **Options**
 
-- `-o,--output TEXT:DIR`: Output directory
-- `--upload`: Upload to Allxon server
+- `-o,--output TEXT:DIR`: Specify the output directory for the log
+- `--upload`: Upload the log to the server
 
 **Example**
 

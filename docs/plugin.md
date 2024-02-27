@@ -1,16 +1,16 @@
-Allxon plugin utility.
+Show cache of the Configs and Alerts for Allxon Agent and Plugins.
 
 ## Options
 
-- `--app-guid TEXT`: Plugins GUID.
+- `--app-guid TEXT`: Input the Plugin's App GUID to show cache of the Configs and Alerts.
 
 ## `config`
 
-Show plugin's Config data.
+Show cache of the Configs for Allxon Agent and Plugins.
 
 **Options**
 
-- `--format`: Format the output.
+- `--format`: Output in formated JSON.
 
 **Example**
 
@@ -20,11 +20,11 @@ allxon-cli plugin --app-guid 8102220f-080f-4f12-a413-6ccb2c786fgd config
 
 ## `alarm`
 
-Show plugin's Alarm data.
+Show cache of the Alerts for Allxon Agent and Plugins.
 
 **Options**
 
-- `--format`: Format the output.
+- `--format`: Output in formated JSON.
 
 **Example**
 
