@@ -47,7 +47,6 @@ sudo bash -c "$(wget -qO - https://get.allxon.net/linux)"
 - `--profile TEXT`: Set the profile .json file.
 - `--region TEXT`: Set the server region for Allxon Agent [US, JP].
 - `--proxy TEXT`: Set proxy url for Allxon Agent installation and environment.
-- `--external-ca TEXT`: Set external CA certificate path (transparent proxy) for Allxon Agent installation and environment.
 - `--no-ui`: Disable Allxon Agent UI installation.
 - `--silent`: Skip all prompts.
 - `--skip-launch`: Skip launch Allxon Agent after installation.

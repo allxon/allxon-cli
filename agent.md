@@ -55,15 +55,3 @@ Set the proxy server for Allxon Agent.
 ```bash
 allxon-cli agent proxy --url "https://your-proxy-server.com"
 ```
-
-## `external-ca`
-
-Set the external CA certificate for Allxon Agent.
-
-*Require administrator or root permission*
-
-**Example**
-
-```bash
-allxon-cli agent external-ca --file /path/to/your/ca.crt
-```

@@ -7,6 +7,7 @@ Make a Allxon ota artifact package from given directory which contain `ota_deplo
 **Options**
 
 - `-d, --directory TEXT:DIRECTORY`: The folder to generate an OTA artifact (required).
+- `-a, --architect TEXT`: The architecture of the OTA artifact [x86_64|aarch64|all] (default: host architecture).
 
 **Example**
 
