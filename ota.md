@@ -15,13 +15,12 @@ Provide a path with `ota_deploy.sh` inside.
 
 ```
 allxon-cli ota make --directory /path/to/ota_content
+allxon-cli ota make --directory /path/to/ota_content --architect x86_64
 ```
 
-## `test`
+## `test` 🔒
 
 Test a Allxon ota artifact deployment on local device.
-
-*Require administrator or root permission*
 
 **Options**
 

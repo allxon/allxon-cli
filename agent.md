@@ -1,10 +1,8 @@
 Execute Allxon Agent utilities.
 
-## `uninstall`
+## `uninstall` 🔒
 
 Uninstall Allxon Agent.
-
-*Require administrator or root permission*
 
 **Example**
 
@@ -15,8 +13,6 @@ allxon-cli agent uninstall
 ## `info`
 
 Get the current Allxon Agent status.
-
-*Require administrator or root permission*
 
 **Example**
 
@@ -44,11 +40,9 @@ Check the network environment of your edge device.
 allxon-cli agent diagnose
 ```
 
-## `proxy`
+## `proxy` 🔒
 
 Set the proxy server for Allxon Agent.
-
-*Require administrator or root permission*
 
 **Example**
 

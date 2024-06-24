@@ -25,6 +25,8 @@ Or you can install from [release page](https://github.com/allxon/allxon-cli/rele
 - [`allxon-cli log`](log.md)
 - [`allxon-cli version`](version.md)
 
+> Note: 🔒 means the command is require root permission / administrator authorization.
+
 # Linux online installer
 
 Online installer provide a simple way to install Allxon Agent on Linux system. The script will install the latest version of Allxon Agent and `allxon-cli` automatically.
@@ -41,10 +43,11 @@ sudo bash -c "$(wget -qO - https://get.allxon.net/linux)"
 ## Options
 
 - `--release TEXT`: Install specific version of Allxon Agent, default is latest version.
-- `--release-file TEXT`: Install Allxon Agent from local file.
+- `--release-file TEXT:FILE`: Install Allxon Agent from local file.
 - `--token TEXT`: Pair the device through 'add device booster' token.
 - `--name TEXT`: Set device name.
-- `--profile TEXT`: Set the profile .json file.
+- `--profile TEXT:FILE`: Set the profile .json file.
+- `--subscription-id TEXT`: Set the subscription id to assign seat for current deivce.
 - `--region TEXT`: Set the server region for Allxon Agent [US, JP].
 - `--proxy TEXT`: Set proxy url for Allxon Agent installation and environment.
 - `--no-ui`: Disable Allxon Agent UI installation.
