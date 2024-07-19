@@ -13,9 +13,7 @@ After that, your can following command to show current `allxon-cli` version.
 allxon-cli version
 ```
 
-ℹ️ On Windows, you may need to add the installed path (`C:\Program Files\allxon-cli\bin`) to the PATH environment variable in order to run the `allxon-cli` from anywhere.
-
-Or you can install from [release page](https://github.com/allxon/allxon-cli/releases) manually.
+> On Windows, you may need to add the installed path (`C:\Program Files\allxon-cli\bin`) to the PATH environment variable in order to run the `allxon-cli` from anywhere. Or you can install from [release page](https://github.com/allxon/allxon-cli/releases) manually.
 
 ## Reference
 
@@ -25,7 +23,7 @@ Or you can install from [release page](https://github.com/allxon/allxon-cli/rele
 - [`allxon-cli log`](log.md)
 - [`allxon-cli version`](version.md)
 
-> Note: 🔒 means the command is require root permission / administrator authorization.
+> The symbol '🔒' means the command is require root permission / administrator authorization.
 
 # Linux online installer
 
@@ -44,12 +42,6 @@ sudo bash -c "$(wget -qO - https://get.allxon.net/linux)"
 
 - `--release TEXT`: Install specific version of Allxon Agent, default is latest version.
 - `--release-file TEXT:FILE`: Install Allxon Agent from local file.
-- `--token TEXT`: Pair the device through 'add device booster' token.
-- `--name TEXT`: Set device name.
-- `--profile TEXT:FILE`: Set the profile .json file.
-- `--subscription-id TEXT`: Set the subscription id to assign seat for current deivce.
-- `--region TEXT`: Set the server region for Allxon Agent [US, JP].
-- `--proxy TEXT`: Set proxy url for Allxon Agent installation and environment.
 - `--no-ui`: Disable Allxon Agent UI installation.
 - `--silent`: Skip all prompts.
 - `--skip-launch`: Skip launch Allxon Agent after installation.
@@ -57,7 +49,20 @@ sudo bash -c "$(wget -qO - https://get.allxon.net/linux)"
 - `--help`: Show help message and exit.
 - `--version`: Show version and exit.
 
+## Options with enrollment settings
+Device will be automatically enrolled to the specified settings.
+> ❗Options only work with first time installation.
+
+- `--token TEXT`: Pair the device through 'add device booster' token.
+- `--name TEXT`: Set device name.
+- `--profile TEXT:FILE`: Set the profile .json file.
+- `--subscription-id TEXT`: Set the subscription id to assign seat for current deivce.
+- `--region TEXT`: Set the server region for Allxon Agent [US, JP].
+- `--proxy TEXT`: Set proxy url for Allxon Agent installation and environment.
+
 ### Details
+
+#### `--profile TEXT:FILE`: 
 
 Profile file is a json file that contains the fields under Profile section in the Allxon Protal. The file can be used to set the profile during installation. The file should be in the following format:
 
@@ -78,7 +83,13 @@ Profile file is a json file that contains the fields under Profile section in th
 }
 ```
 
-> Note: country should be in [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) format.
+> Country should be in [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) format.
+
+#### `--subscription-id TEXT`:
+
+Subscription id is the id of the subscription that the device will be assigned to. The subscription id can be found in the Allxon Portal.
+> ❗️Must be used with `--token` option.
+
 
 # Windows wizard installer
 
