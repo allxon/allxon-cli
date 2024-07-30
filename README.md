@@ -40,24 +40,25 @@ sudo bash -c "$(wget -qO - https://get.allxon.net/linux)"
 
 ## Options
 
-- `--release TEXT`: Install specific version of Allxon Agent, default is latest version.
-- `--release-file TEXT:FILE`: Install Allxon Agent from local file.
+- `--release TEXT`: Install a specific version of Allxon Agent; default is the latest version. 
+- `--release-file TEXT:FILE`: Install Allxon Agent from a local file.
 - `--no-ui`: Disable Allxon Agent UI installation.
 - `--silent`: Skip all prompts.
-- `--skip-launch`: Skip launch Allxon Agent after installation.
+- `--skip-launch`: Skip launching Allxon Agent after installation.
 - `--uninstall`: Uninstall Allxon Agent.
 - `--help`: Show help message and exit.
 - `--version`: Show version and exit.
 
 ## Options with enrollment settings
-Device will be automatically enrolled to the specified settings.
+Device will be automatically enrolled with the specified settings.
 > ❗Options only work with first time installation.
 
-- `--token TEXT`: Pair the device through 'add device booster' token.
+- `--token TEXT`: Add device using [*Add-Device Booster*](https://www.allxon.com/knowledge/how-to-set-up-add-device-booster) token. 
+- `--subscription-id TEXT`: Set *Subscription ID* to assign a seat for the device ([Learn more](https://www.allxon.com/knowledge/how-to-add-devices-and-assign-subscription-seats-using-allxon-cli)). 
+  > ❗️Must be used with `--token` option.
 - `--name TEXT`: Set device name.
-- `--profile TEXT:FILE`: Set the profile .json file.
-- `--subscription-id TEXT`: Set the subscription id to assign seat for current deivce.
-- `--region TEXT`: Set the server region for Allxon Agent [US, JP].
+- `--profile TEXT:FILE`: Set device profile using a [Profile file](#profile-textfile).
+- `--region TEXT`: Set the server region(`'US'`, `'JP'`) for Allxon Agent .
 - `--proxy TEXT`: Set proxy url for Allxon Agent installation and environment.
 
 ### Details
@@ -84,11 +85,6 @@ Profile file is a json file that contains the fields under Profile section in th
 ```
 
 > Country should be in [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) format.
-
-#### `--subscription-id TEXT`:
-
-Subscription id is the id of the subscription that the device will be assigned to. The subscription id can be found in the Allxon Portal.
-> ❗️Must be used with `--token` option.
 
 
 # Windows wizard installer
