@@ -89,15 +89,8 @@ Profile file is a json file that contains the fields under Profile section in th
 
 # Windows wizard installer
 
-Windows wizard installer provide a gui wizard style to install Allxon Agent on Windows system. The wizard will install specfic version of Allxon Agent and `allxon-cli` depend on wizard version.
+Powershell version of online installer provide a simple way to install Allxon Agent on Windows system. The script will install the latest version of Allxon Agent and `allxon-cli` automatically.
 
-[**Download wizard installer**](https://get.allxon.net/windows/allxon-installer.exe)
-
-Following command to execute wizard through command line mode:
-
-```cmd
-allxon-installer.exe --confirm-command install [options]=[arguments]
-
-@REM Install with add device booster token
-allxon-installer.exe --confirm-command install token=dTvCX2QuT9C-cQnFYhoqda6588088583
+```powershell
+Invoke-WebRequest -Uri "https://dev.allxon.net/windows/allxon-installer.ps1" -OutFile "$env:TEMP\allxon-installer.ps1"; & "$env:TEMP\allxon-installer.ps1"
 ```
