@@ -30,9 +30,22 @@ Test a Allxon ota artifact deployment on local device.
 
 **Example**
 
+Linux bash:
 ```bash
 allxon-cli ota test --file 505b22463d94220de326ec610b66e7e7-Allxon_OTA_Artifact-L-x86_64.tar.gz
 
 # Pass additional arguments to the ota_deploy.sh
-allxon-cli ota test --file 505b22463d94220de326ec610b66e7e7-Allxon_OTA_Artifact-L-x86_64.tar.gz --args "key1" "value1" "key2" "value2"
+allxon-cli ota test --file 505b22463d94220de326ec610b66e7e7-Allxon_OTA_Artifact-L-x86_64.tar.gz --args "name1" "value1" "name2" "value2"
+
+# Pass additional arguments like this to the ota_deploy.sh after executing the command
+# ota_deploy.sh --name1='value1' --name2='value2'
 ```
+
+Windows batch:
+```batch
+allxon-cli.exe ota test --file 505b22463d94220de326ec610b66e7e7-Allxon_OTA_Artifact-W-x86_64.zip --args "name1" "value1" "name2" "value2"
+
+:: Pass additional arguments like this to the ota_deploy.bat after executing the command
+:: ota_deploy.bat --name1='value1' --name2='value2'
+```
+
