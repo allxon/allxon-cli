@@ -92,5 +92,5 @@ Profile file is a json file that contains the fields under Profile section in th
 Powershell version of online installer provide a simple way to install Allxon Agent on Windows system. The script will install the latest version of Allxon Agent and `allxon-cli` automatically.
 
 ```powershell
-Invoke-WebRequest -Uri "https://dev.allxon.net/windows/allxon-installer.ps1" -OutFile "$env:TEMP\allxon-installer.ps1"; & "$env:TEMP\allxon-installer.ps1"
+Invoke-WebRequest -Uri "https://get.allxon.net/windows" -OutFile "$env:TEMP\allxon-installer.ps1"; & "$env:TEMP\allxon-installer.ps1"
 ```
