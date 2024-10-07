@@ -58,7 +58,7 @@ Device will be automatically enrolled with the specified settings.
   > ❗️Must be used with `--token` option.
 - `--name TEXT`: Set device name.
 - `--profile TEXT:FILE`: Set device profile using a [Profile file](#profile-textfile).
-- `--region TEXT`: Set the server region(`'US'`, `'JP'`, `'EU'`) for Allxon Agent .
+- `--region TEXT`: Set the server region(`'US'`, `'EU'`) for Allxon Agent .
 - `--proxy TEXT`: Set proxy url for Allxon Agent installation and environment.
 
 ### Details
